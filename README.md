@@ -25,6 +25,7 @@ There would be a vector<obj> getFreq(vector<string> input); that would return th
 There would be a creator for the object, which has vector<string> and vector<int> inside.
 There would be the getString and getInt functions for the object.
 There would be the getResult function that would do problem 4.
+There also would be the initializer for problem 3.
 
 ###Milestone2###
 #Problems:
@@ -45,6 +46,15 @@ There would be the getResult function that would do problem 4.
 	It will then try to open all of the files that were passed to it and if it can't it will exit
 	If the program can do both of these then it will continue as normal
 	
+	
+
+The only files I can think we need are a header, its respective class, the program, the compiler, the extra class, and a test class.
+
+For the first main, it likely just be a small chain that calls each funtion, then the return at the end. Likely the initializer > getFreq > then the getResult which would get returned.
+
+For the second main, It would do what is above, but it would also do the similarity tests, then output whatever had the highest similarity score.
+
+
 ##Libraries Needed
 	string
 	vector
