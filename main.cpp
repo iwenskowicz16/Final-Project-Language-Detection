@@ -1,9 +1,8 @@
 #include <vector>
 #include <iostream>
 #include <string>
-#include "dna.h"
-#include "swap.h"
-#include "sort.h"
+#include "obj.h"
+#include "partone.h"
 
 int main() {
 	
