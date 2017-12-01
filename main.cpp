@@ -4,7 +4,7 @@
 #include "obj.h"
 #include "partone.h"
 
-int main() {
-	
-	}
+int main(){
+	OBJ::OBJ test;
+	test = OBJ()
 }
