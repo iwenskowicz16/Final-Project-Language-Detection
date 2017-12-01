@@ -31,11 +31,17 @@ int OBJ::getNum(int i){
 	return nums[i];
 }
 
+std::vector<string> OBJ::getLetters(){
+	return lets;
+}
+
+std::vector<string> OBJ::getNumbers){
+	return nums;
+}
 //Comparison to see if one trigram goes before another
-bool comparator(std::string string1, std::string string2){
-	if(string1[0] < string2[0]) {return true;}
-	else if(string1[0] == string2[0] and string1[1] < string2[1]) {return true;}
-	else if(string1[0] == string2[0] and string1[1] == string2[1] and string1[2] < string2[2]) {return true;}
+bool compare(std::string1[0] < std::string2[0]) {return true;}
+	else if(std::string1[0] == std::string2[0] and std::string1[1] < std::string2[1]) {return true;}
+	else if(std::string1[0] == std::string2[0] and std::string1[1] == std::string2[1] and std::string1[2] < std::string2[2]) {return true;}
 	else {return false;}
 }
 
@@ -70,8 +76,10 @@ void quicksort(std::vector<std::string>& letters, std::vector<std::string>& numb
 }
 
 void OBJ::sortContent(){
-	
-	quicksort(letters, numbers,0, , comparator)
+	std:: vector<std::string> letters = this.getLetters();
+	std:: vector<std::string> numbers = this.getNumbers();
+	int length = letters.size() -1;
+	quicksort(letters, numbers,0, length, compare);
 }
 
 void OBJ::add(std::string b){
