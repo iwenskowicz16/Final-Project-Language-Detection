@@ -31,8 +31,18 @@ int OBJ::getNum(int i){
 	return nums[i];
 }
 
+bool comparator(std::string string1, std::string string2){
+	if(string1[0] < string2[0]) {return true;}
+	else if(string1[0] == string2[0] and string1[1] < string2[1]) {return true;}
+	else if(string1[0] == string2[0] and string1[1] == string2[1] and string1[2] < string2[2]) {return true;}
+	else {return false;}
+}
+
 OBJ OBJ::sortContent(OBJ inp){
 	//just sorts the content. feel free to adapt it to a void. make sure to swap the respective nums as well.
+	std::vector<std:: string> sortLetters;
+	std::vector<std:: string> sortNums;
+	
 }
 
 void OBJ::add(std::string b){
