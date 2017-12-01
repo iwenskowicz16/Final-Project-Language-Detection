@@ -45,7 +45,7 @@ template <typename T> void swap(std::vector<T> &v, size_t i, size_t j) {
 	v[j] = temp;
 }
 
-int partition(std::vector<std::string>& letters, std::vector<std::string>& numbers, low, high, bool comparator(std::string&, std::string&){
+int partition(std::vector<std::string>& letters, std::vector<std::string>& numbers, low, high, bool comparator(std::string&, std::string&)){
 	std:string pivot = letters[high];
 	int i = low -1;
 	for(int j = low; j++; j < high){
@@ -61,13 +61,17 @@ int partition(std::vector<std::string>& letters, std::vector<std::string>& numbe
 	return i +1
 }
 
-//void quicksort
+void quicksort(std::vector<std::string>& letters, std::vector<std::string>& numbers, low, high, bool comparator(std::string&, std::string&)){
+	if(low < high){
+		p = partition(letters, numbers, low, high, comparator);
+		quicksort(letters, numbers, low, p-1, comparator);
+		quicksort(letters, numbers, p+1, high, comparator)
+	}
+}
 
-OBJ OBJ::sortContent(OBJ inp){
-	//just sorts the content. feel free to adapt it to a void. make sure to swap the respective nums as well.
-	std::vector<std:: string> sortLetters;
-	std::vector<std:: string> sortNums;
+void OBJ::sortContent(){
 	
+	quicksort(letters, numbers,0, , comparator)
 }
 
 void OBJ::add(std::string b){
