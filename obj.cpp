@@ -31,8 +31,55 @@ int OBJ::getNum(int i){
 	return nums[i];
 }
 
-OBJ OBJ::sortContent(OBJ inp){
-	//just sorts the content. feel free to adapt it to a void. make sure to swap the respective nums as well.
+std::vector<string> OBJ::getLetters(){
+	return lets;
+}
+
+std::vector<string> OBJ::getNumbers){
+	return nums;
+}
+//Comparison to see if one trigram goes before another
+bool compare(std::string1[0] < std::string2[0]) {return true;}
+	else if(std::string1[0] == std::string2[0] and std::string1[1] < std::string2[1]) {return true;}
+	else if(std::string1[0] == std::string2[0] and std::string1[1] == std::string2[1] and std::string1[2] < std::string2[2]) {return true;}
+	else {return false;}
+}
+
+template <typename T> void swap(std::vector<T> &v, size_t i, size_t j) {
+	T temp = v[i];
+	v[i] = v[j];
+	v[j] = temp;
+}
+
+int partition(std::vector<std::string>& letters, std::vector<std::string>& numbers, low, high, bool comparator(std::string&, std::string&)){
+	std:string pivot = letters[high];
+	int i = low -1;
+	for(int j = low; j++; j < high){
+		if(comparator(letters[j], pivot)){
+			i++;
+			swap(letters, i, j);
+			swap(numbers, i, j);
+		}
+	}
+	if(letters[high] < letters[i +1]){
+		swap(letters, i+1, high);
+	}
+	return i +1
+}
+
+void quicksort(std::vector<std::string>& letters, std::vector<std::string>& numbers, low, high, bool comparator(std::string&, std::string&)){
+	if(low < high){
+		p = partition(letters, numbers, low, high, comparator);
+		quicksort(letters, numbers, low, p-1, comparator);
+		quicksort(letters, numbers, p+1, high, comparator)
+	}
+}
+
+void OBJ::sortContent(){
+	std:: vector<std::string> letters = this.getLetters();
+	std:: vector<std::string> numbers = this.getNumbers();
+	int length = letters.size() -1;
+	quicksort(letters, numbers,0, length, compare);
 }
 
 void OBJ::add(std::string b){
