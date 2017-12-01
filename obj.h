@@ -21,7 +21,7 @@ public:
 	
 	OBJ sortContent(OBJ inp);			//self explanatory
 	
-	OBJ add(std::string b);		//adds the string to the vector. incriments the respective vector if already present.
+	void add(std::string b);		//adds the string to the vector. incriments the respective vector if already present.
 
 private:
 
@@ -32,4 +32,4 @@ private:
 };
 
 
-#endif
+#endif 
