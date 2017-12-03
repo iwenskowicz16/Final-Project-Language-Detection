@@ -21,7 +21,7 @@ OBJ::OBJ(std::ifstream &infile) {
 		s += line;
 	}
 	for(int offset = 0; offset < 3; offset++){
-		for(int i = offset; i < (int)(rese.size()) - 2; i += 3){
+		for(int i = offset; i < (int)(s.size()) - 2; i += 3){
 			std::string h = "";
 			h += s[i];
 			h += s[i+1];
@@ -50,14 +50,6 @@ int OBJ::getNum(int i){
 	return nums[i];
 }
 
-//std::vector<string> OBJ::getLetters(){
-//	return lets;
-//}
-
-//std::vector<string> OBJ::getNumbers){
-//	return nums;
-//}
-//Comparison to see if one trigram goes before another
 bool compare(std::string1[0] < std::string2[0]) {return true;}
 	else if(std::string1[0] == std::string2[0] and std::string1[1] < std::string2[1]) {return true;}
 	else if(std::string1[0] == std::string2[0] and std::string1[1] == std::string2[1] and std::string1[2] < std::string2[2]) {return true;}
@@ -95,23 +87,29 @@ void quicksort(std::vector<std::string>& letters, std::vector<std::string>& numb
 }
 
 void OBJ::sortContent(){
-	//std:: vector<std::string> letters = this.getLetters();
-	//std:: vector<std::string> numbers = this.getNumbers();
 	int length = letters.size() -1;
 	quicksort(lets, nums,0, length, compare);
 }
 
-void OBJ::add(std::string b){
-	bool found = false;
-	for(int i = 0;i < lets.size() - 1; i++){
-		if(b == lets[i]){
-			nums[i] += 1;
-			found = true;
-			break;
+void OBJ::add(std::string s){
+	for(int offset = 0; offset < 3; offset++){
+		for(int i = offset; i < (int)(s.size()) - 2; i += 3){
+			std::string h = "";
+			h += s[i];
+			h += s[i+1];
+			h += s[i+2];
+			bool found = false;
+			for(int i = 0;i < lets.size() - 1; i++){
+				if(h == lets[i]){
+					nums[i] += 1;
+					found = true;
+					break;
+				}
+			}
+			if(found = false){
+				lets.push_back(h);
+				nums.push_back(1);
+			}
 		}
-	}
-	if(found = false){
-		lets.push_back(b);
-		nums.push_back(1);
 	}
 }
