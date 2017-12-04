@@ -4,11 +4,12 @@
 #include "obj.h"
 
 int main(int argc, char *a[]){
-	argc++;
+	if(argc > 2 or argc < 2){exit(EXIT_FAILURE);}
 	OBJ::OBJ test = OBJ(a[1]);
 	std::vector<int> freq = test.getNum();
 	for(int i = 0; i < 19682; i++){
-		std::cout << freq[i] << " " << std::endl; 
+		std::cout << freq[i] << " ";
 	}
+	std::cout << std::endl;
 	return 0;
 }
