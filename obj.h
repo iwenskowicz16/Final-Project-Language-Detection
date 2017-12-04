@@ -9,9 +9,9 @@ class OBJ {
 
 public:
 
-	OBJ();
+	//OBJ();
 
-	OBJ(std::vector<std::string> letters, std::vector<std::string> numbers);
+	//OBJ(std::vector<std::string> letters, std::vector<std::string> numbers);
 
 	OBJ(std::string s);			//all of these above are basic object declarations
 
@@ -19,7 +19,7 @@ public:
 	
 	int getNum(int i);				//returns the value at position i
 	
-	OBJ sortContent(OBJ inp);			//self explanatory
+	void sortContent();			//self explanatory
 	
 private:
 

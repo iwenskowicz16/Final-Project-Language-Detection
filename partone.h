@@ -9,6 +9,4 @@ std::vector<std::string> make19kVec();		//creates all possible 3 letter combinat
 
 std::vector<int> doProb(OBJ comparator);
 												//merges the object that keeps track of the file contents with the vector filled with 0's
-//OBJ getData(filename);		//gets the data
-
 #endif
