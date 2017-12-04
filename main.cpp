@@ -8,7 +8,7 @@ int main(int argc, char *argv[]){
 	std::string testString = argv[1];
 	OBJ::OBJ test = OBJ(testString);
 	std::vector<int> freq = test.getNum();
-	for(int i = 0; i < 19682; i++){
+	for(int i = 0; i < 19683; i++){
 		std::cout << freq[i] << " ";
 	}
 	std::cout << std::endl;

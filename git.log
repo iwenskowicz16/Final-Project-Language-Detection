@@ -1,3 +1,208 @@
+commit 0ea3f03337f4a9beb7f67180a03d3415a2b9290e
+Author: Unknown <jacob_turner@my.uri.edu>
+Date:   Mon Dec 4 18:17:06 2017 -0500
+
+    Debug v3
+    
+    I did it?
+
+commit e17e1fbd7fcd60d562e41f2b7a3d572a438d0ded
+Author: Unknown <jacob_turner@my.uri.edu>
+Date:   Mon Dec 4 18:08:17 2017 -0500
+
+    Debug v2.0
+    
+    Does it work yet?
+
+commit 034c06009ff33da2f3918872a8cad7aba23ffab5
+Author: Unknown <jacob_turner@my.uri.edu>
+Date:   Mon Dec 4 17:31:16 2017 -0500
+
+    Removed Bugs
+    
+    Hopefully it works now
+
+commit ec34caa4a5dde6a6968df3a20323475383197486
+Merge: 1b87f14 613dbda
+Author: Unknown <jacob_turner@my.uri.edu>
+Date:   Mon Dec 4 17:03:38 2017 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 613dbda4a8fd6d7a3791278d6698957fa544affe
+Author: Unknown <ianwensk@gmail.com>
+Date:   Mon Dec 4 16:32:59 2017 -0500
+
+    Final post by Ian
+    
+    Removed more unneccisary code, the function now compiles and prints stuff
+
+commit 47a834779c3d9fba265142510ab72a9481b7c66e
+Author: Unknown <ianwensk@gmail.com>
+Date:   Mon Dec 4 15:33:37 2017 -0500
+
+    Massive Rework
+    
+    removed all sort related functions. Adapted all the remaining functions to the new formula. Removed any remaining functions and merged them into obj.cpp
+
+commit 9e18fd84554be28b0ba8873a76315e1a944616a9
+Author: Unknown <ianwensk@gmail.com>
+Date:   Mon Dec 4 14:43:37 2017 -0500
+
+    Mass bug fixes
+    
+    Fixed most of the bugs. Sort is currently unfuntional
+
+commit 6351a31b2cf04e3df07f0ca9e194cb67c00d0fe1
+Author: Unknown <ianwensk@gmail.com>
+Date:   Mon Dec 4 11:59:54 2017 -0500
+
+    Last min hotfix
+    
+    " " < "a"
+    edited the object decleration to allow it to take string as an input.
+    
+    Removed add function due to uselessness and repetitive code.
+
+commit 84731696f151f08e147eca3e3f044d724c8568fe
+Author: Unknown <ianwensk@gmail.com>
+Date:   Sun Dec 3 18:27:47 2017 -0500
+
+    Implimentation of main
+    
+    Created main so that it should run the correct methods in the correct order
+
+commit 9b654eed8e126c05e5c303d3709842db2881d784
+Merge: 0a8fbd1 de4b28d
+Author: Unknown <ianwensk@gmail.com>
+Date:   Fri Dec 1 15:52:13 2017 -0500
+
+    Merge remote-tracking branch 'origin/compileScript'
+
+commit 0a8fbd1f8899d96a28a1ee7ad82e14e324901122
+Author: Unknown <ianwensk@gmail.com>
+Date:   Fri Dec 1 15:49:20 2017 -0500
+
+    Finished obj
+    
+    finished the functions in obj, then remembered that this was a thing
+
+commit de4b28d77741527d3ee11a048ae67d7121b29510
+Author: Unknown <jacob_turner@my.uri.edu>
+Date:   Fri Dec 1 15:48:47 2017 -0500
+
+    Edited the compile scrit to hopefully work
+
+commit c468abf0c1f86476aed5c08715a426962bdced2f
+Merge: bda7c4a e522963
+Author: unknown <unknown@example.com>
+Date:   Fri Dec 1 15:13:12 2017 -0500
+
+    Merge remote-tracking branch 'origin/SortContent'
+
+commit bda7c4a388cc872b6372cd3c2b84b376ae394c7d
+Merge: 8c468b6 955c192
+Author: unknown <unknown@example.com>
+Date:   Fri Dec 1 15:12:44 2017 -0500
+
+    Merge branch 'FillingIngOBJ'
+
+commit 955c19268cae4e93d2a6f599b27bd61c0fd8f718
+Author: Unknown <ianwensk@gmail.com>
+Date:   Fri Dec 1 15:12:19 2017 -0500
+
+    Edited partone
+    
+    filled in most of the functions
+
+commit e52296323890001611347d67a3970152cd7c4e46
+Author: Unknown <jacob_turner@my.uri.edu>
+Date:   Fri Dec 1 14:34:02 2017 -0500
+
+    Implemented a Quicksort
+
+commit 952b7fd32c9104870542d1029636fe65b10ddc8f
+Author: Unknown <jacob_turner@my.uri.edu>
+Date:   Fri Dec 1 14:24:42 2017 -0500
+
+    Added Quicksort
+
+commit 2219714cc0cadee2b8a1360fffe596e8b34af83a
+Author: Unknown <jacob_turner@my.uri.edu>
+Date:   Fri Dec 1 14:14:31 2017 -0500
+
+    Added Partition and Swap
+
+commit 4c79fff114edbfd736bbc4c0d597435aef3f83ff
+Author: Unknown <jacob_turner@my.uri.edu>
+Date:   Fri Dec 1 13:52:49 2017 -0500
+
+    Added a Compaator Function
+
+commit 9ea2b95405e3efa8252694b11b34926610d9fe2c
+Author: Unknown <ianwensk@gmail.com>
+Date:   Fri Dec 1 13:03:25 2017 -0500
+
+    edited obj
+    
+    wrote most of the functions for obj.
+
+commit 1b87f1403401d38a1bc727548b4b2e41a8375f54
+Merge: a59ff59 8c468b6
+Author: Unknown <jacob_turner@my.uri.edu>
+Date:   Thu Nov 30 13:39:39 2017 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 8c468b61c8890e8bda44dd2e662b12d9cb1e40a0
+Author: Unknown <ianwensk@gmail.com>
+Date:   Thu Nov 30 13:29:11 2017 -0500
+
+    Renamed things
+    
+    Renamed everything to appropriate names
+
+commit 5cacc18c97ab298750fb69734394bb81f9072125
+Author: Unknown <ianwensk@gmail.com>
+Date:   Thu Nov 30 13:22:30 2017 -0500
+
+    Cleanup
+    
+    deleted extra files, and cleared out main of original code
+
+commit 85bb3deec2d0265fa4f1188b9971c8781e516a22
+Author: Unknown <ianwensk@gmail.com>
+Date:   Thu Nov 30 13:20:18 2017 -0500
+
+    Fixed a small error
+    
+    ^
+    Also added some comments
+
+commit 89ecc96b109303d1fe52d3cb1ac09943b508d84a
+Author: Unknown <ianwensk@gmail.com>
+Date:   Thu Nov 30 13:03:32 2017 -0500
+
+    More content updates
+    
+    Updated the contents of dna.h, and cleaned up a bit in various files.
+
+commit eac6e6d18cf167f853a0e1b18c87d7f4cd24310f
+Author: Unknown <ianwensk@gmail.com>
+Date:   Thu Nov 30 12:52:43 2017 -0500
+
+    Added a bunch of stuff
+    
+    added a bunch of files for me to copy and rename to suit my needs, started to change sort.h into a useable file (relative to this project)
+
+commit 3e2fdb05c181af0904134d68b831fd9a4a06f9d3
+Author: Unknown <ianwensk@gmail.com>
+Date:   Mon Nov 20 19:13:08 2017 -0500
+
+    added log
+    
+    ^
+
 commit c4c08a0a057355246a2f763cbeb847151db21ae9
 Author: Unknown <ianwensk@gmail.com>
 Date:   Mon Nov 20 19:10:16 2017 -0500
@@ -13,6 +218,13 @@ Date:   Mon Nov 20 19:01:12 2017 -0500
     Combined our files
     
     We figured out how to merge files in this program
+
+commit a59ff591243df8bec96935d52035ccfb588c08cd
+Merge: 5646630 e342f31
+Author: unknown <unknown@example.com>
+Date:   Mon Nov 20 18:55:48 2017 -0500
+
+    Merge branch 'Milestone2'
 
 commit e342f312196468948a100aa9b1015fa90b8ee993
 Author: Unknown <jacob_turner@my.uri.edu>

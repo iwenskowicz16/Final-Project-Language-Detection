@@ -109,7 +109,7 @@ int OBJ::ltn(char i){
 
 std::vector<int> OBJ::makeIntVec(){
 	std::vector<int> h = {};
-	for(int i = 0; i < 19682; i++){
+	for(int i = 0; i < 19683; i++){
 		h.push_back(0);
 	}
 	return h;
