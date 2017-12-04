@@ -27,85 +27,85 @@ std::vector<std::string> partone::make19kVec(){
 
 std::string ntl(int i){
 	if(i = 0){
-		return "a";
+		return " ";
 	}
 	else if(i = 1){
-		return "b";
+		return "a";
 	}
 	else if(i = 2){
-		return "c";
+		return "b";
 	}
 	else if(i = 3){
-		return "d";
+		return "c";
 	}
 	else if(i = 4){
-		return "e";
+		return "d";
 	}
 	else if(i = 5){
-		return "f";
+		return "e";
 	}
 	else if(i = 6){
-		return "g";
+		return "f";
 	}
 	else if(i = 7){
-		return "h";
+		return "g";
 	}
 	else if(i = 8){
-		return "i";
+		return "h";
 	}
 	else if(i = 9){
-		return "j";
+		return "i";
 	}
 	else if(i = 10){
-		return "k";
+		return "j";
 	}
 	else if(i = 11){
-		return "l";
+		return "k";
 	}
 	else if(i = 12){
-		return "m";
+		return "l";
 	}
 	else if(i = 13){
-		return "n";
+		return "m";
 	}
 	else if(i = 14){
-		return "o";
+		return "n";
 	}
 	else if(i = 15){
-		return "p";
+		return "o";
 	}
 	else if(i = 16){
-		return "q";
+		return "p";
 	}
 	else if(i = 17){
-		return "r";
+		return "q";
 	}
 	else if(i = 18){
-		return "s";
+		return "r";
 	}
 	else if(i = 19){
-		return "t";
+		return "s";
 	}
 	else if(i = 20){
-		return "u";
+		return "t";
 	}
 	else if(i = 21){
-		return "v";
+		return "u";
 	}
 	else if(i = 22){
-		return "w";
+		return "v";
 	}
 	else if(i = 23){
-		return "x";
+		return "w";
 	}
 	else if(i = 24){	
-		return "y";
+		return "x";
 	}
 	else if(i = 25){
-		return "z";
+		return "y";
 	}
 	else if(i = 26){
-		return " ";
+		return "z";
 	}
 }
 

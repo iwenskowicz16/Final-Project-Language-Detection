@@ -10,16 +10,14 @@ OBJ::OBJ(){
 	lets = {};
 }
 
-OBJ::OBJ(std::vector<std::string> letters, std::vector<std::string> numbers) {
+OBJ::OBJ(std::vector<std::string> letters, std::vector<std::string> numbers){
 	lets = letters;
 	nums = numbers;
 }
 
-OBJ::OBJ(std::ifstream &infile) {
-	std::string s = "";
-	for (std::string line; std::getline(infile, line); ){
-		s += line;
-	}
+OBJ::OBJ(std::string s){
+	nums = {};
+	lets = {};
 	for(int offset = 0; offset < 3; offset++){
 		for(int i = offset; i < (int)(s.size()) - 2; i += 3){
 			std::string h = "";
@@ -27,15 +25,15 @@ OBJ::OBJ(std::ifstream &infile) {
 			h += s[i+1];
 			h += s[i+2];
 			bool found = false;
-			for(int i = 0;i < lets.size() - 1; i++){
-				if(h == lets[i]){
-					nums[i] += 1;
+			for(int b = 0;b < lets.size() - 1; b++){
+				if(h == lets[b]){
+					nums[b] += 1;
 					found = true;
 					break;
 				}
 			}
 			if(found = false){
-				lets.push_back(b);
+				lets.push_back(h);
 				nums.push_back(1);
 			}
 		}
@@ -89,27 +87,4 @@ void quicksort(std::vector<std::string>& letters, std::vector<std::string>& numb
 void OBJ::sortContent(){
 	int length = letters.size() -1;
 	quicksort(lets, nums,0, length, compare);
-}
-
-void OBJ::add(std::string s){
-	for(int offset = 0; offset < 3; offset++){
-		for(int i = offset; i < (int)(s.size()) - 2; i += 3){
-			std::string h = "";
-			h += s[i];
-			h += s[i+1];
-			h += s[i+2];
-			bool found = false;
-			for(int i = 0;i < lets.size() - 1; i++){
-				if(h == lets[i]){
-					nums[i] += 1;
-					found = true;
-					break;
-				}
-			}
-			if(found = false){
-				lets.push_back(h);
-				nums.push_back(1);
-			}
-		}
-	}
 }

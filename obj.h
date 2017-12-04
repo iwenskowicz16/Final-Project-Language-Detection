@@ -13,7 +13,7 @@ public:
 
 	OBJ(std::vector<std::string> letters, std::vector<std::string> numbers);
 
-	OBJ(std::ifstream &infile);			//all of these above are basic object declarations
+	OBJ(std::string s);			//all of these above are basic object declarations
 
 	std::string getLet(int i);				//returns the string of 3 letters at position i
 	
@@ -21,8 +21,6 @@ public:
 	
 	OBJ sortContent(OBJ inp);			//self explanatory
 	
-	void add(std::string b);		//adds the string to the vector. incriments the respective vector if already present.
-
 private:
 
 	std::vector<int> nums;			//vector of how many of each respective string set
