@@ -14,12 +14,10 @@ OBJ::OBJ(std::string s){
 			h += ltn(s[i]) * 27 * 27;
 			h += ltn(s[i+1]) * 27;
 			h += ltn(s[i+2]);
-			nums[h] += 1;
+			nums[h] ++;
 		}
 	}
 }
-
-
 
 std::vector<int> OBJ::getNum(){
 	return nums;

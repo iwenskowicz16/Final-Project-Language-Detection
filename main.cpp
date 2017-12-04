@@ -3,9 +3,10 @@
 #include <string>
 #include "obj.h"
 
-int main(int argc, char *a[]){
-	if(argc > 2 or argc < 2){exit(EXIT_FAILURE);}
-	OBJ::OBJ test = OBJ(a[1]);
+int main(int argc, char *argv[]){
+	if(argc != 2){exit(EXIT_FAILURE);}
+	std::string testString = argv[1];
+	OBJ::OBJ test = OBJ(testString);
 	std::vector<int> freq = test.getNum();
 	for(int i = 0; i < 19682; i++){
 		std::cout << freq[i] << " ";
