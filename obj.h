@@ -17,15 +17,17 @@ public:
 
 	std::string getLet(int i);				//returns the string of 3 letters at position i
 	
-	int getNum(int i);				//returns the value at position i
+	std::vector<int> getNum(int i);				//returns the value at position i
 	
-	void sortContent();			//self explanatory
+	int OBJ::ltn(std::string i);
+	
+	std::string OBJ::ntl(int i);
+	
+	std::vector<int> OBJ::makeIntVec();
 	
 private:
 
 	std::vector<int> nums;			//vector of how many of each respective string set
-	
-	std::vector<std::string> lets;		//vector of string sets
 
 };
 
