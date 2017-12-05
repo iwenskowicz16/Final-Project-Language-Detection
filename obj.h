@@ -15,11 +15,9 @@ public:
 	
 	std::vector<int> getNum();				//returns the value at position i
 	
-	int ltn(char i);
+	int ltn(char i);			//retunrs a number based on the input
 	
-	//std::string ntl(int i);
-	
-	std::vector<int> makeIntVec();
+	std::vector<int> makeIntVec();			//creates a giant vector
 	
 private:
 

@@ -9,21 +9,21 @@
 OBJ::OBJ(std::string s){
 	nums = makeIntVec();
 	for(int offset = 0; offset < 3; offset++){
-		for(int i = offset; i < (int)(s.size()) - 2; i += 3){
+		for(int i = offset; i < (int)(s.size()) - 2; i += 3){			//goes through every possible adgacent 3 letters
 			int h = 0;
 			h += ltn(s[i]) * 27 * 27;
-			h += ltn(s[i+1]) * 27;
-			h += ltn(s[i+2]);
-			nums[h] ++;
-		}
+			h += ltn(s[i+1]) * 27;				//converts the set of letters into a number
+			h += ltn(s[i+2]);	
+			nums[h] ++;						//incriments the number
+		}	
 	}
 }
 
-std::vector<int> OBJ::getNum(){
+std::vector<int> OBJ::getNum(){  //returns the vector
 	return nums;
 }
 
-int OBJ::ltn(char i){
+int OBJ::ltn(char i){			//outputs a number based on the input
 	if(i == ' '){
 		return 0;
 	}
@@ -108,7 +108,7 @@ int OBJ::ltn(char i){
 }	
 
 std::vector<int> OBJ::makeIntVec(){
-	std::vector<int> h = {};
+	std::vector<int> h = {};				//creates the giant array and returns it
 	for(int i = 0; i < 19683; i++){
 		h.push_back(0);
 	}
