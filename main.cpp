@@ -16,11 +16,11 @@ int main(int argc, char *argv[]){
 		}
 	}
 	OBJ::OBJ inp = OBJ(toStr(argv[argc - 1]));
-	int big = 0;
+	double big = 0;
 	int pos = 0;
 	for(int i = 1; i < argc; i++){
 		OBJ::OBJ comp = OBJ(toStr(argv[i]));
-		int l = compare(inp.getNum(),comp.getNum());
+		double l = compare(inp.getNum(),comp.getNum());
 		if(big < l){
 			big = l;
 			pos = i;
