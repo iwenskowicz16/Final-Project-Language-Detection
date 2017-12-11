@@ -26,8 +26,6 @@ int main(int argc, char *argv[]){
 			pos = i;
 		}
 	}
-	OBJ::OBJ test = OBJ(testString);			//runs the functions
-	std::vector<int> freq = test.getNum();		//extracts the result
 	std::cout << argv[big] << std::endl;		//prints the result
 	return 0;
 }
