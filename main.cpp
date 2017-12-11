@@ -1,28 +1,25 @@
 #include <vector>
 #include <iostream>
 #include <string>
-#include "obj.h"
 #include <fstream>
+#include "obj.h"
 
 int main(int argc, char *argv[]){
 	if(argc < 2){exit(EXIT_FAILURE);}			//checks to make sure there is only 1 input
 	for(int i = 1; i <= argc; i++){
-		std::string s = "";
-		s += argv[i];
-		s += ".txt"
-		ifstream myFile(s);
+		ifstream myFile(argv[i]);
 		if(myFile.fail()){
 			return 1;
 		}
 	}
 	OBJ::OBJ inp = OBJ(toStr(argv[argc - 1]));
-	double big = 0;
+	long big = 0;
 	int pos = 1;
 	for(int i = 1; i < argc - 1; i++){
 		OBJ::OBJ comp = OBJ(toStr(argv[i]));
-		double l = compare(inp.getNum(),comp.getNum());
-		if(big < l){
-			big = l;
+		long h = compare(inp.getNum(),comp.getNum());
+		if(big < h){
+			big = h;
 			pos = i;
 		}
 	}
@@ -30,8 +27,20 @@ int main(int argc, char *argv[]){
 	return 0;
 }
 
-double compare(std::vector<int> a, std::vector<int> b){
-	
+long compare(std::vector<int> a, std::vector<int> b){
+	unsigned long top = 0.0;
+	for(int i = 0; i < (int)length(a) - 1; i++){
+		top += (a[i] * b[i]);
+	}
+	unsigned long a2 = 0.0;
+	for(int i = 0; i < (int)length(a) - 1; i++){
+		a2 += (a[i] * a[i]);
+	}
+	unsigned long b2 = 0.0;
+	for(int i = 0; i < (int)length(b) - 1; i++){
+		b2 += (b[i] * b[i]);
+	}
+	return (top/(a2*b2));
 }
 
 std::string toStr(std::string name){
