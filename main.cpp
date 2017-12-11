@@ -4,7 +4,13 @@
 #include "obj.h"
 
 int main(int argc, char *argv[]){
-	if(argc != 2){exit(EXIT_FAILURE);}			//checks to make sure there is only 1 input
+	if(argc < 2){exit(EXIT_FAILURE);}			//checks to make sure there is only 1 input
+	for(int i = 1; i <= argc; i++){
+		ifstream myFile(argv[i]);
+		if(myFile.fail()){
+			return 1;
+		}
+	}
 	std::string testString = argv[1];
 	OBJ::OBJ test = OBJ(testString);			//runs the functions
 	std::vector<int> freq = test.getNum();		//extracts the result
