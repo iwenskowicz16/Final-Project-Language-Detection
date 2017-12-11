@@ -6,7 +6,10 @@
 int main(int argc, char *argv[]){
 	if(argc < 2){exit(EXIT_FAILURE);}			//checks to make sure there is only 1 input
 	for(int i = 1; i <= argc; i++){
-		ifstream myFile(argv[i]);
+		std::string s = "";
+		s += argv[i];
+		s += ".txt";
+		ifstream myFile(s);
 		if(myFile.fail()){
 			return 1;
 		}
